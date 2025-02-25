@@ -19,11 +19,9 @@ def caesar_cipher(text, shift, mode="encrypt"):
     
     return result
 
-# User Input
 mode = input("Enter mode (encrypt/decrypt): ").strip().lower()
 message = input("Enter message: ")
 shift = int(input("Enter shift value: "))
 
-# Perform Encryption/Decryption
 output = caesar_cipher(message, shift, mode)
 print(f"Result: {output}")
