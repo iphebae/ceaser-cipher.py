@@ -1,9 +1,6 @@
 # ceaser-cipher.py
-This is a python script that implements the CEASER CIPHER, a simple encryption technique 
 
 print( "welcome to ceaser cipher program")
-
-
 def caesar_cipher(text, shift, mode="encrypt"):
     result = ""
     
@@ -15,8 +12,7 @@ def caesar_cipher(text, shift, mode="encrypt"):
             shift_base = ord('A') if char.isupper() else ord('a')
             result += chr((ord(char) - shift_base + shift) % 26 + shift_base)
         else:
-            result += char  # Keep non-alphabet characters unchanged
-    
+            result += char  # Keep non-alphabet characters unchanged 
     return result
 
 mode = input("Enter mode (encrypt/decrypt): ").strip().lower()
